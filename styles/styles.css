@@ -1,6 +1,19 @@
 body{
 direction: rtl;background-color: rgb(228, 221, 221);
 }
+html{scroll-behavior: smooth;}
+#scroll{position: fixed;
+bottom: 20px;
+right: 50px;
+background-color: white;
+height: 30px;
+width: 40px;
+border-radius: 30%;
+}
+#scroll img{width: 35px;padding: 2px;
+}
+#scroll:target{display: block;
+}
 header{background-color: green; background-size: 20px;}
 header nav ul li a{color:white;
 font-size:larger;
@@ -31,18 +44,39 @@ transform:translateX(-200px)
 #p1{text-align: center;
 white-space:pre-wrap;font-size: larger;
 }
-a img{width: 60px;
+main section ul li{display: inline-flex;
+margin-left: 50px;
+transform: translateX(-50px);
 }
-a h3{color: green;font-size: larger; 
+.link{display: flex;
+gap: 10px;
+width:400px;
+text-decoration: none;
+border:1px solid #ddd;
+padding: 10px;
+background-color: #fff;
+border-radius: 40px;
+box-shadow: 0 5px rgb(107, 102, 102);
 }
-a p{color: rgb(69, 68, 68);font-size: large;
+.link:hover{transform: translateY(-5px);
+box-shadow: 0 5px 15px rgb(107, 102, 102);
+color: #06c;}
+.link h3{margin: 0;
+margin-bottom: 10px;
+font-size: 20px;
+color: green;
 }
-main section ul li{display: inline-flex;margin-left: 100px;
+.link p{font-size: 15px;
+margin: 0px;
 }
-.li1 img{border-radius: 30px;}
+.link img{width: 60px;
+height: auto;
+border-radius: 30px;
+margin-bottom: 10px;
+}
 .li2{width: 220px;
 }
-.li2 img{width: 300px;
+.li2 img{width: 250px;
 }
 .li2 h3{color: black;font-size: larger;
 text-shadow: 2px 2px 12px rgb(78, 77, 77);
@@ -50,10 +84,6 @@ text-align: center;
 }
 .li2 p{color: black;font-size: large;text-align: center;
 }
-#scroll{position: fixed;
-bottom: 20px;
-right: 20px;
-height: 40px;}
 footer{background-color: green;
 }
 footer ul img{width: 15px;
